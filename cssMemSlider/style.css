@@ -4,14 +4,46 @@ html {
 
 .memslider{
     width: 100vw;
+    height: 1300px;
     margin-top: 300px;
     margin-bottom: 300px;
     margin-left: 500px;
     padding-right: 500px;
+    overflow: hidden;
+}
+
+p {
+    height: 100px;
+    color: black;
+    font-size: 50px;
 }
 
 .foto {
     height: 1200px;
     width: 100vw;
 }
+ input{
+    color: black;
+    display: none;
+}
 
+label {
+    cursor: pointer;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px;
+    border-radius: 20px;
+    background-color: black;
+}
+
+label:after{
+    border: 3px solid black;
+
+}
+
+.labelslide {
+    position: fixed;
+    top: 1600px;
+    left: 1350px
+}
