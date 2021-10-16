@@ -2,7 +2,16 @@ html {
     background-color: rgb(85, 85, 71);
 }
 
-.foto {
-    height: 500px;
-    width: 700px;
+.memslider{
+    width: 100vw;
+    margin-top: 300px;
+    margin-bottom: 300px;
+    margin-left: 500px;
+    padding-right: 500px;
 }
+
+.foto {
+    height: 1200px;
+    width: 100vw;
+}
+
