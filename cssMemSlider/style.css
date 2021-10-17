@@ -1,0 +1,80 @@
+html {
+    background-color: rgb(85, 85, 71);
+}
+
+.memslider{
+    width: 100vw;
+    height: 1300px;
+    margin-top: 300px;
+    margin-bottom: 300px;
+    margin-left: 500px;
+    padding-right: 500px;
+    overflow: hidden;
+}
+
+.memslider div {
+    position: absolute;
+}
+
+p {
+    height: 100px;
+    color: black;
+    font-size: 50px;
+    background-color: rgb(85, 85, 71);
+}
+
+.foto {
+    height: 1200px;
+    width: 100vw;
+    transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+}
+ input{
+    color: black;
+    display: none;
+}
+
+label {
+    cursor: pointer;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px;
+    border-radius: 20px;
+    background-color: black;
+    transition: background ease-in-out 0.5s ;
+}
+
+label:after{
+    border: 3px solid black;
+
+}
+
+.labelslide {
+    margin-top: -324px;
+}
+
+.mem1 {
+    opacity: 1;
+}
+
+.mem2 {
+    opacity: 0;
+}
+
+.mem3 {
+    opacity: 0;
+}
+
+.mem4 {
+    opacity: 0;
+}
+/* #df:active ~  .mem1 */
+#mem1:checked ~ .memslider > .mem1,
+#mem2:checked ~ .memslider > .mem2,
+#mem3:checked ~ .memslider > .mem3,
+#mem4:checked ~ .memslider > .mem4 {
+	opacity: 1;
+	z-index: 1;
+	transform: scale(1);
+}
+
